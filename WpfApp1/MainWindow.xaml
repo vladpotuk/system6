@@ -1,12 +1,15 @@
 ﻿<Window x:Class="WpfApp1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfApp1"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Text Analysis" Height="300" Width="400">
     <Grid>
+        <Label Content="Enter text:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="TextInput" HorizontalAlignment="Left" Height="100" Margin="10,40,0,0" VerticalAlignment="Top" Width="360" AcceptsReturn="True" TextWrapping="Wrap"/>
 
+        <Button Content="Analyze" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="100" Click="AnalyzeButton_Click"/>
+
+        <TextBlock Name="VowelsTextBlock" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="360"/>
+        <TextBlock Name="ConsonantsTextBlock" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="360"/>
+        <TextBlock Name="SymbolsTextBlock" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="360"/>
     </Grid>
 </Window>
